@@ -1,4 +1,5 @@
 ---
+unbound::local_domain: internal
 unbound::backup_dns_servers: []
 unbound::forward_servers: []
 unbound::reverse_overrides: []
