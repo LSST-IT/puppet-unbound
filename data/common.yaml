@@ -1,0 +1,7 @@
+---
+unbound::backup_dns_servers: []
+unbound::forward_servers: []
+unbound::reverse_overrides: []
+unbound::search_domains: []
+
+unbound::install::ensure: installed

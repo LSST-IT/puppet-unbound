@@ -1,0 +1,3 @@
+---
+unbound::install::pkg_list: [ unbound ]
+unbound::log_file: /var/log/unbound.log
