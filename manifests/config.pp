@@ -10,7 +10,7 @@ class unbound::config {
     owner => 'root',
     group => 'root',
     mode => '644',
-    require => Package['unbound'],
+    require => Package[ $::unbound::install::pkg_list ],
   }
 
   file { "$unbound::log_file":
@@ -18,7 +18,7 @@ class unbound::config {
     owner => 'unbound',
     group => 'unbound',
     mode => '644',
-    require => Package['unbound'],
+    require => Package[ $::unbound::install::pkg_list ],
   } 
 
 }

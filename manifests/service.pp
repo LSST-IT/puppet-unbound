@@ -1,8 +1,10 @@
 # @summary Keep the unbound service running
 #
-class unbound::service {
+class unbound::service (
+    String $service_name,
+) {
 
-  service { 'unbound':
+  service { $service_name:
     ensure => running,
     enable => true,
     hasstatus => true,

@@ -1,3 +1,6 @@
 ---
-unbound::install::pkg_list: [ unbound ]
 unbound::log_file: /var/log/unbound.log
+
+unbound::install::pkg_list: [ unbound ]
+
+unbound::service::service_name: unbound
