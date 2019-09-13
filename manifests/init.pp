@@ -19,12 +19,12 @@
 #   include unbound
 class unbound (
 
-  String            $log_file,
-  String            $local_domain,
-  Array[String]     $search_domains,
-  Array[Hash]       $forward_servers,
-  Array[Hash, 0, 2] $backup_dns_servers,
-  Array[Array[String, 2, 2]]     $reverse_overrides,   
+  String                           $log_file,
+  String                           $local_domain,
+  Array[ String ]                  $search_domains,
+  Array[ Hash ]                    $forward_servers,
+  Array[ Hash, 0, 2 ]              $backup_dns_servers,
+  Array[ Array[ String[ 1 ] ], 2 ] $reverse_overrides,   
 
 )
 {
